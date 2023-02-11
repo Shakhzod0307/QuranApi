@@ -16,8 +16,8 @@ res = r.json()
 
 
 # bu qismda Quran oyatini text qilib consolega chiqaradi
-# r = requests.get(url_oyat)
-# res = r.json()['text']
+r = requests.get(url_oyat)
+res = r.json()['text']
 
 
 print(r.status_code)
