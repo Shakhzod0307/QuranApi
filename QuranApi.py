@@ -14,11 +14,9 @@ url_oyat = f'https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions/{tafsi
 r = requests.get(url_sura)
 res = r.json()
 
-
 # bu qismda Quran oyatini text qilib consolega chiqaradi
 r = requests.get(url_oyat)
 res = r.json()['text']
-
 
 print(r.status_code)
 print(res)
